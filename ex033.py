@@ -1,0 +1,15 @@
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+n3 = int(input('Digite um número: '))
+if n1 > (n2 or n3):
+   print('O {} é o maior número.'.format(n1))
+elif n2 > (n3 or n1):
+   print('O {} é o maior número.'.format(n2))
+elif n3 > (n1 or n2):
+   print('O {} é o maior número.'.format(n3))
+if n1 < (n2 or n3):
+   print('O {} é o menor número.'.format(n1))
+elif n2 < (n3 or n1):
+   print('O {} é o menor número.'.format(n2))
+elif n3 < (n1 or n2):
+   print('O {} é o menor número.'.format(n3))
