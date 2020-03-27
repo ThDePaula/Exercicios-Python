@@ -1,0 +1,5 @@
+func = input('Nome do funcionário: ')
+sal = float(input('Salário do Funcionário: R$'))
+aumeto = sal + (sal * 15 / 100)
+print('Salário antes do aumento R${:.2f}'.format(sal))
+print('Salário após o aumento: R${:.2f}'.format(aumeto))
