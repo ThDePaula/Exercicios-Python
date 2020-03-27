@@ -1,0 +1,5 @@
+dia = input('Dia: ')
+mes = input('Mês: ')
+ano = input('Ano: ')
+# print('Você nasceu dia', dia, 'do', mês, 'de', ano + '. Correto?')
+print('Você nasceu dia {}/{}/{}. \nCorreto?! :)'.format(dia, mes, ano))
