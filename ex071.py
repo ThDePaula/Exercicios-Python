@@ -1,4 +1,4 @@
-n50 = n20 = n10 = n01 = 0
+n50 = n20 = n10 = n05 = n01 = 0
 print('='*20)
 print('{:^20}'.format('BANCO SEJA FELIZ'))
 print('='*20)
@@ -14,17 +14,22 @@ while total >= 1:
     elif 20 >= total >= 10:
         total -= 10
         n10 += 1
+    elif 10 >= total >= 5:
+        total -= 5
+        n05 += 1
     elif 10 >= total >= 1:
         total -= 1
         n01 +=1
 print('-='*13)
-print(f'Valor retirado: R${valor}')
+print(f'Valor retirado → R${valor}')
 if n50 >= 1:
-    print(f'Notas de R$50: {n50}')
+    print(f'Notas de R$50 → {n50}')
 if n20 >= 1:
-    print(f'Notas de R$20: {n20}')
+    print(f'Notas de R$20 → {n20}')
 if n10 >= 1:
-    print(f'Notas de R$10: {n10}')
+    print(f'Notas de R$10 → {n10}')
+if n05 >= 1:
+    print(f'Notas de R$5 → {n05}')
 if n01 >= 1:    
-    print(f'Notas de R$1: {n01}')
+    print(f'Moedas de R$1 → {n01}')
 print('-='*13)
